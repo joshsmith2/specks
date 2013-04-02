@@ -11,8 +11,7 @@ USAGE AND DOCUMENTATION
 
 	Running the plugin will require three minor additions to your site:
 
-		- A small chunk of PHP in the head of the page to be animated, to import the 
-		requisite functions and define various parameters for the animation. This also contains a call to a javascript function which will animate the elements. 
+		- A line of script to include specks.php. 
 		
 		- A call to a PHP function which will print out the elements to be animated, 
 		placed somewhere in the body.
