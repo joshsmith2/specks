@@ -1,4 +1,5 @@
-SPECKS jQuery PLUGIN v1.0 - Readme
+Specks - jQuery plugin v1.0 
+================
 
 	Specks was written to solve a problem for a client who wanted a site
 	with a 'subtle, cosmic glimmer.' It was designed  to automate the creation,
@@ -8,6 +9,8 @@ SPECKS jQuery PLUGIN v1.0 - Readme
 	project, by the way, are at www.thelovebelow.org
 
 USAGE AND DOCUMENTATION
+========
+
 
 	Running the plugin will require three minor additions to your site:
 
@@ -20,6 +23,7 @@ USAGE AND DOCUMENTATION
 		- A set of conventially named background images (see below), located in specks/img
 		
 TO USE THE PLUGIN: 
+========
 
 	1. Ensure you have imported jQuery into all pages you'd like to animate (jQuery.com)
 	
