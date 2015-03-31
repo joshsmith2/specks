@@ -33,19 +33,23 @@ TO USE THE PLUGIN:
 
  - The following 'include' statement should go into the <head> of your page, or wherever in your site you habitially include php scripts. You might need to edit the file path so it points to wherever specks.php resides on your site. 
 
-		<?php include 'specks.php';?>
-	 
+```php
+    <?php include 'specks.php';?>
+```
+
 - The second snippet should be pasted into the <body> of the page to be animated. You should change all occurences of '$mySpeck' for the name of the object you will define in specks.php (see step 4.) You will need to insert this multiple times if using multiple objects.
-	 
-		<!--Start Specks v1.0-->
-			<!--Print speck elements to be animated.-->
-			<?php printSpecks ($bloom->noOfElements, $bloom->name); ?>
-			
-			<!--Run javascript to animate elements-->
-			<script type="text/javascript">
-				speckMain(<?php echo $bloom->name;?>);
-			</script>
-		<!--End Specks-->
+
+```php
+<!--Start Specks v1.0-->
+        <!--Print speck elements to be animated.-->
+        <?php printSpecks ($bloom->noOfElements, $bloom->name); ?>
+        
+        <!--Run javascript to animate elements-->
+        <script type="text/javascript">
+                speckMain(<?php echo $bloom->name;?>);
+        </script>
+<!--End Specks-->
+```
 	
 3. In 'specks.php', replace all occurences of 'mySpeck' with an arbitary name for your speck animation object (e.g $foo).
 
