@@ -1,12 +1,12 @@
 Specks - jQuery plugin v1.0 
 ================
 
-	Specks was written to solve a problem for a client who wanted a site
-	with a 'subtle, cosmic glimmer.' It was designed  to automate the creation,
-	styling, random positioning and animation of multiple elements, 
-	each with their own background image. It was also, for me, an interesting exercise 
-	in writing harmonious PHP and Javascript. The results of that first 
-	project, by the way, are at www.thelovebelow.org
+Specks was written to solve a problem for a client who wanted a site
+with a 'subtle, cosmic glimmer.' It was designed  to automate the creation,
+styling, random positioning and animation of multiple elements, 
+each with their own background image. It was also, for me, an interesting exercise 
+in writing harmonious PHP and Javascript. The results of that first 
+project, by the way, are at www.thelovebelow.org
 
 USAGE AND DOCUMENTATION
 ========
