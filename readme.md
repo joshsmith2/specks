@@ -9,33 +9,33 @@ in writing harmonious PHP and Javascript. The results of that first
 project, by the way, are at www.thelovebelow.org
 
 USAGE AND DOCUMENTATION
-========
+==
 
 
-	Running the plugin will require three minor additions to your site:
+Running the plugin will require three minor additions to your site:
 
-		- A small chunk of PHP in the head of the page to be animated, to import the 
-		requisite functions and define various parameters for the animation. This also contains a call to a javascript function which will animate the elements. 
-		
-		- A call to a PHP function which will print out the elements to be animated, 
-		placed somewhere in the body.
-		
-		- A set of conventially named background images (see below), located in specks/img
+- A small chunk of PHP in the head of the page to be animated, to import the 
+requisite functions and define various parameters for the animation. This also contains a call to a javascript function which will animate the elements. 
+
+- A call to a PHP function which will print out the elements to be animated, 
+placed somewhere in the body.
+
+- A set of conventially named background images (see below), located in specks/img
 		
 TO USE THE PLUGIN: 
-========
+==
 
-	1. Ensure you have imported jQuery into all pages you'd like to animate (jQuery.com)
-	
-	2. Place the 'specks' folder anywhere into your site. 
-	
-	3. Place the following code snippets into any page you'd like to animate (these can also be found in insertIntoPage.php): 
-	
-	 - The following 'include' statement should go into the <head> of your page, or wherever in your site you habitially include php scripts. You might need to edit the file path so it points to wherever specks.php resides on your site. 
+1. Ensure you have imported jQuery into all pages you'd like to animate (jQuery.com)
+
+2. Place the 'specks' folder anywhere into your site. 
+
+3. Place the following code snippets into any page you'd like to animate (these can also be found in insertIntoPage.php): 
+
+ - The following 'include' statement should go into the <head> of your page, or wherever in your site you habitially include php scripts. You might need to edit the file path so it points to wherever specks.php resides on your site. 
 
 		<?php include 'specks.php';?>
 	 
-	- The second snippet should be pasted into the <body> of the page to be animated. You should change all occurences of '$mySpeck' for the name of the object you will define in specks.php (see step 4.) You will need to insert this multiple times if using multiple objects.
+- The second snippet should be pasted into the <body> of the page to be animated. You should change all occurences of '$mySpeck' for the name of the object you will define in specks.php (see step 4.) You will need to insert this multiple times if using multiple objects.
 	 
 		<!--Start Specks v1.0-->
 			<!--Print speck elements to be animated.-->
@@ -47,13 +47,13 @@ TO USE THE PLUGIN:
 			</script>
 		<!--End Specks-->
 	
-	3. In 'specks.php', replace all occurences of 'mySpeck' with an arbitary name for your speck animation object (e.g $foo).
-	
-	4. Place at least one image into the specks/img folder. The plugin works by applying a series of background images to an element, and then fading these elements in and out.
-	
-	These images must share the name given to a speck object, and numbered serially from 0; so the images for an object named $foo should be called $foo-0.png, $foo-1.png etc. It's possible to use images with a different file extension (.png is the default) as long as they all share an extension. 
-	
-	5. The line $mySpeck = new Speck() defines a PHP object. By defining properties of this object you can control the qualities of the animation. Some of these properties are obligatory.
+3. In 'specks.php', replace all occurences of 'mySpeck' with an arbitary name for your speck animation object (e.g $foo).
+
+4. Place at least one image into the specks/img folder. The plugin works by applying a series of background images to an element, and then fading these elements in and out.
+
+These images must share the name given to a speck object, and numbered serially from 0; so the images for an object named $foo should be called $foo-0.png, $foo-1.png etc. It's possible to use images with a different file extension (.png is the default) as long as they all share an extension. 
+
+5. The line $mySpeck = new Speck() defines a PHP object. By defining properties of this object you can control the qualities of the animation. Some of these properties are obligatory.
 	
 	OBJECT PROPERTIES:
 	
@@ -119,7 +119,4 @@ TO USE THE PLUGIN:
 			
 That's it! The plugin will run automatically on page load. 
 
-If you encounter any problems with the above, have requests for added functionality, or suggestions as to how the plugin could be improved, please let me know at specks@joshsmithonline.com.
-
-
-		
+If you encounter any problems with the above, have requests for added functionality, or suggestions as to how the plugin could be improved, please let me know at joshsmith2@gmail.com
