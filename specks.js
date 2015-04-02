@@ -4,10 +4,9 @@
 	Specks generates a number of elements, and fades them in and out recursively at random points within a defined area. 
 	Each of these elements can be associated with multiple background images, which the function will cycle through. 
 	
-	All functions written by Josh Smith (www.joshsmithonline.com)
+	All functions written by Josh Smith (www.lessstatic.com)
 
-	Any comments, suggestions, help or criticism is extremely welcome. You can get me at specks@joshsmithonline.com
-
+	Any comments, suggestions, help or criticism is extremely welcome. You can get me at joshsmith2@gmail.com
 */
 
 function speckMain(speck){ 
@@ -19,13 +18,10 @@ function speckMain(speck){
 
 function setDefaults(speck){
 //Sets various attributes of the speck object to a default value.	
-
-	
 	if(speck.hasOwnProperty("scope")){
 		if (speck.scope["x"] == "window") {
 			speck.scope["x"] = $(window).width();
 		}
-
 		if (speck.scope["y"] == "window") {
 			speck.scope["y"] = $(window).height();
 		}
@@ -33,12 +29,10 @@ function setDefaults(speck){
 }
 
 function styleElements(speck){ //Applies CSS to speck elements, including specified widths and heights
-	
 	var width;
 	var height;
 	
 	$('.bloom').each(function(i){ 
-			
 		$(this).css({
 			'width': '200px',
 			'height': '200px',
@@ -49,7 +43,6 @@ function styleElements(speck){ //Applies CSS to speck elements, including specif
 	
 	
 	$(toClass(speck.name)).each(function(index){
-	
 		//If various heights/widths have been entered for each image, input those values into the CSS
 		if (speck.standardDimension["width"] === 0) {
 			width = speck.elementWidths[index];
@@ -90,7 +83,6 @@ function fadeMultipleIn(speck, i) {
 		}
 		
 		else { //Fade 'oldest' element out, recall function.
-		
 			$(toId(speck.name) + '-' + ((i+1)%speck.noOfElements)).fadeOut(speck.fadeTime, function() {
 				fadeMultipleIn(speck,(i+1));
 			});
@@ -114,7 +106,6 @@ function toId(str){	//Converts a string to a CSS id.
 
 //Place a certain element at given coordinates. Type must be one of position or background
 function relocate(elementId, x, y, type){
-	
 	if (type=="background"){
 		$(elementId).css("background-position",x+'px '+y+'px');
 	}
@@ -126,17 +117,11 @@ function relocate(elementId, x, y, type){
 }
 
 function swapBackgroundImg(elementName, noOfElements, noOfBackgrounds, i) { //Change the background image for the next one in the folder.
-
 	$('#'+elementName+'-'+(i%noOfElements)).each(function(){ 
-		
 		for (j=0; j<noOfBackgrounds; j++){
 			$(this).removeClass(elementName+'-'+j);
 		}
-		
 		$(this).addClass(elementName+'-'+(i%noOfBackgrounds));
 	
 	});
-
 }
-
-

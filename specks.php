@@ -70,7 +70,6 @@ class Speck{
 		"x" => "window",
 		"y" => "window",
 	);
-	
 }
 
 function printSpecks($noOfElements, $elementId){
@@ -84,5 +83,4 @@ function styleSpecks($elementName, $noOfBackgrounds){
 		echo "<style> ." . $elementName . '-' . $i . "{background-image: url(\"img/" . $elementName . '-' . $i .".png\")} </style>";
 	}
 } 
-
 ?>
